@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add Two Numbers</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <script src="cursor.js"></script>
+
+    <header class="site-header">
+      <div class="logo">
+        <img src="logo.png" alt="Your Logo" />
+      </div>
+      <div class="contact">
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </header>
+
+    <div class="container">
+
+      <h1>SALARY CALCULATOR</h1>
+      <div class="calculate">
+
+        <input type="number" id="Working_days" placeholder="Enter Working Days" />
+        <input type="number" id="salary" placeholder="Enter Salary" />
+        <input type="number" id="OT" placeholder="Enter OT Hours" />
+        <button class="custom-button" id="showButton" onclick="salcal()">
+          calculate
+        </button>
+      </div>
+
+      <script
+        type="module"
+        src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"
+      ></script>
+
+      <model-viewer class="mw"
+        src="./assets/3d/null.gltf"
+        ar
+        auto-rotate
+        shadow-intensity="1"
+        camera-controls
+        touch-action="pan-y"
+      ></model-viewer>
+
+      <div class="answer">
+        <p id="result">Result :</p>
+        <p id="one">work/hrs :</p>
+        <p id="two">sal/hr :</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
